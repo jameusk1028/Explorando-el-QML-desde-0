@@ -3,10 +3,17 @@ site_description: Guía de estudio de Quantum Machine Learning (UAO)
 theme:
   name: material
   language: es
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
 nav:
-  - Introducción: introduccion.md
+  - Inicio: introduccion.md
   - Fundamentos:
-      - Computación cuántica: Fundamentos_de_computacion_cuantica.md
-      - Machine Learning clásico: machine_learning.md
-      - Conexión ML ↔ QML: Conexion_entre_ML_y_computacion_cuantica.md
+      - ⚡ Computación cuántica: computacion_cuantica.md
+      - 🤖 Machine Learning clásico: machine_learning.md
+      - 🔗 Conexión ML ↔ QML: conexion_qml.md
 
