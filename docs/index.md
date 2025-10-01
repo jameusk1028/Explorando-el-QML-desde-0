@@ -1,4 +1,4 @@
-# Explorando-QML
+# Explorando el QML desde 0
 
 ## Descripción
 
