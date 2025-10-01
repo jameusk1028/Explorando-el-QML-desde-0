@@ -11,9 +11,10 @@ theme:
     - search.highlight
     - content.code.copy
 nav:
-  - Inicio: introduccion.md
+  - Inicio: index.md
   - Fundamentos:
       - ⚡ Computación cuántica: computacion_cuantica.md
       - 🤖 Machine Learning clásico: machine_learning.md
       - 🔗 Conexión ML ↔ QML: conexion_qml.md
+
 
