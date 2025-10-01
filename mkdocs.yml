@@ -12,9 +12,11 @@ theme:
     - content.code.copy
 nav:
   - Inicio: index.md
-  1. [Introducción](./docs/introduccion.md)  
-  2. [Fundamentos de computación cuántica](./docs/Fundamentos_de_computacion_cuantica.md)  
-  3. [Fundamentos de Machine Learning clásico](./docs/machine_Learning.md)  
-  4. [Conexión entre ML y lo cuántico](./docs/Conexion_entre_ML_y_computacion_cuantica.md)  
+    - Fundamentos:
+      - Introduccion: introduccion.md 
+      - Computación cuántica: Fundamentos_de_computacion_cuantica.md
+      - Machine Learning clásico: machine_Learning.md
+      - onexión ML ↔ QML: Conexion_entre_ML_y_computacion_cuantica.md
+  
 
 
