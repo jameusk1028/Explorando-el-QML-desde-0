@@ -45,5 +45,4 @@ El resultado: Modelos híbridos capaces de abordar problemas que hoy resultan im
 - Video: [Machine Learning explicado de forma sencilla (YouTube)](https://www.youtube.com/watch?v=n-DflQldMuc)  
 
 ---
-
-👉 Esta sección marca el puente entre los **fundamentos clásicos** y las **posibilidades cuánticas**, preparando el terreno para la futura sección de **Exploración práctica**.
+Esta sección marca el puente entre los fundamentos clásicos y las posibilidades cuánticas, preparando el terreno para la futura sección de Exploración práctica.
