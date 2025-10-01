@@ -12,9 +12,9 @@ theme:
     - content.code.copy
 nav:
   - Inicio: index.md
-  - Fundamentos:
-      - ⚡ Computación cuántica: computacion_cuantica.md
-      - 🤖 Machine Learning clásico: machine_learning.md
-      - 🔗 Conexión ML ↔ QML: conexion_qml.md
+  1. [Introducción](./docs/introduccion.md)  
+  2. [Fundamentos de computación cuántica](./docs/Fundamentos_de_computacion_cuantica.md)  
+  3. [Fundamentos de Machine Learning clásico](./docs/machine_Learning.md)  
+  4. [Conexión entre ML y lo cuántico](./docs/Conexion_entre_ML_y_computacion_cuantica.md)  
 
 
