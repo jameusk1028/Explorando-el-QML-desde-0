@@ -14,10 +14,10 @@ theme:
 
 nav:
   - Inicio: index.md
-  - Fundamentos:
-      - "Computación cuántica": computacion_cuantica.md
-      - "Machine Learning clásico": machine_learning.md
-      - "Conexión ML ↔ QML": conexion_qml.md
+  - Introducción: introduccion.md
+  - Computación cuántica: Fundamentos_de_computacion_cuantica.md
+  - Machine Learning clásico: machine_learning.md
+  - Conexión ML ↔ QML: Conexion_entre_ML_y_computacion_cuantica.md
 
 
 
