@@ -65,10 +65,11 @@ Ejemplos de puertas:
           - Si el qubit de control está en 0, no pasa nada.
           - Si el qubit de control está en 1, el qubit objetivo cambia de estado (de 0 a 1 o de 1 a 0).
   
-      - ¿Por qué es importante?
+      - ¿Por qué es importante la puerta CNOT?
 
 
-  Porque permite entrelazar dos qubits, es decir, crear una conexión entre ellos donde lo que le pase a uno afecta al otro.
+       Porque permite entrelazar dos qubits, es decir, crear una conexión entre ellos donde lo que le pase a uno afecta al otro.
+
        Ejemplo cotidiano: imagina dos interruptores conectados mágicamente: cuando activas uno, el otro cambia instantáneamente sin importar la distancia.
 
 
