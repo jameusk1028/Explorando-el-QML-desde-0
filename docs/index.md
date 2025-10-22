@@ -1,9 +1,10 @@
 # Explorando el QML desde 0
 
-## Descripción
+## Descripción de lo que veras
 
-Repositorio académico sobre Quantum Machine Learning (QML) en la UAO.  
-Incluye fundamentos de computación cuántica y ML, y conexiones entre ambos.  
+El Quantum Machine Learning (QML) es un campo innovador en el cual se combinan la inteligencia artificial y la computacion cuantica, dos de los temas mas hablados en la actualidad.
+
+En este repositorio academico de la UAO te brindaremos una guia accesible para poder entender mejor los conceptos basicos de esta disciplina y que te intereses mas por ella.
 
 Una guía “de la curiosidad a la capacidad técnica” para estudiantes e investigadores.
 
@@ -23,10 +24,10 @@ En el futuro se incluirá la sección Exploración práctica, con ejemplos en Py
 ---
 
 ## El equipo que creo esto para ti
-Proyecto desarrollado por estudiantes de Actividad Complementaria – UAO:  
+Este proyecto fue desarrollado por estudiantes de Actividad Complementaria – UAO:  
 - Juan Andrés Muñoz  
 - Nicolás Murillo  
 - Daniel Eduardo Banguero  
 - Samuel Esteban Ortiz  
 
-Mentor: Julián Hurtado López
+Y nuestro mentor: Julián Hurtado López
