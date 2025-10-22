@@ -64,8 +64,14 @@ Un flujo típico se ve así:
 6. **Implementar**: Llevar el modelo al mundo real (por ejemplo, una app o un sistema de recomendación).  
 >En resumen: el Machine Learning aprende del pasado para predecir el futuro.
 ---
+## **¿Sabías que...?**
 
-## Recursos para que puedas aprender más
+El término Machine Learning fue usado por primera vez en 1959 por Arthur Samuel, quien enseñó a una computadora a jugar damas y mejorar con la práctica.  
+Ese experimento fue el primer ejemplo de una máquina aprendiendo de la experiencia, justo lo que hacemos hoy con algoritmos más avanzados.
+
+---
+
+## **Recursos para que puedas aprender más**
 - [IBM: ¿Qué es machine learning?](https://www.ibm.com/mx-es/think/topics/machine-learning)
 - Video: [¿Qué es Machine Learning? (Google Developers)](https://www.youtube.com/watch?v=ukzFI9rgwfU)  
 - [Curso introductorio de ML – Coursera (Andrew Ng)](https://www.coursera.org/learn/machine-learning)  
