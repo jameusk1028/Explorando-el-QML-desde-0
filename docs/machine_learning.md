@@ -23,9 +23,13 @@ En otras palabras, el ML permite que los computadores aprendan de la experiencia
    Estas son inspiradas en el cerebro humano, son las que permiten reconocer imagenes, voz o lenguaje natural.
    Ejemplo: Asistentes como Siri o Alexa que captan tu voz y la procesan para poder responder inteligentemente
 
-> El reto clave del ML es lograr un equilibrio entre aprender bien los datos y generalizar a situaciones nuevas.  
- > - Si un modelo memoriza demasiado → *overfitting*.  
- > - Si aprende muy poco → *underfitting*.  
+- **El desafio del machine learning: aprender sin pasarse ni quedarse corto:**
+   El objetivo del Machine Learning es lograr que un modelo aprenda bien los datos, pero también generalice para funcionar con información nueva.
+   
+   - Si aprende demasiado, memoriza los datos a lo que se le llama overfitting
+   - Si aprende muy poco, no entiende los patrones lo cual se dice que es underfitting
+
+   En resumen, el reto del Machine Learning está en aprender lo suficiente sin memorizarlo todo, el equilibrio entre ambos es lo que convierte a un modelo en          inteligente y útil.
 
 ---
 ## ¿Por qué es importante?
