@@ -23,8 +23,7 @@ En pocas palabras: nos ayuda a pensar y crear soluciones en niveles que antes pa
 ---
 
 ## **Recursos que te recomendamos ver para empezar**
-- [IBM: Introduction to quantum computing](https://quantum.cloud.ibm.com/learning/es/courses/quantum-business-foundations/introduction-to-quantum-computing?utm)  
-- Video: [Quantum Machine Learning - Tomas Tagliani](https://youtu.be/F_E39gBPRF4?si=90icl8af6b6PgX15)  
+- [IBM: Introduction to quantum computing](https://quantum.cloud.ibm.com/learning/es/courses/quantum-business-foundations/introduction-to-quantum-computing?utm)   
 - Video: [¿Qué es la computación cuántica? (YouTube, Qiskit)](https://www.youtube.com/watch?v=JhHMJCUmq28)
 - Video: [Quantum Machine Learning - 01 - Introduction](https://www.youtube.com/watch?v=QtWCmO_KIlg)
 
