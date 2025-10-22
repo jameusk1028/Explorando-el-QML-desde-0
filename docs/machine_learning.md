@@ -43,13 +43,14 @@ El equilibrio entre ambos es lo que convierte a un modelo en inteligente y útil
 ---
 ## **¿Por qué es importante?**
 El Machine Learning está detrás de muchas de las herramientas y tecnologías que usamos todos los días:
+
 - Recomendaciones personalizadas en YouTube, Netflix o Spotify.
 - Reconocimiento facial para desbloquear el celular o detectar rostros en fotos.
 - Motores de recomendación en Amazon o Mercado Libre que predicen qué podrías querer comprar.
 - Diagnóstico asistido en medicina, donde modelos analizan radiografías o pruebas de laboratorio.
 - Autos autónomos que aprenden a manejar observando millones de kilómetros recorridos.
 
-Todo esto funciona gracias a algoritmos que aprenden de los datos, mejoran con la práctica y ajustan sus predicciones constantemente. 
+Todo esto funciona gracias a algoritmos que aprenden de los datos, mejoran con la práctica y ajustan sus predicciones constantemente.
 
 ---
 ## **¿Cómo funciona un proyecto de ML?**
