@@ -1,0 +1,824 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guía de estudio de Quantum Machine Learning (UAO)">
+      
+      
+      
+      
+        <link rel="prev" href="../introduccion/">
+      
+      
+        <link rel="next" href="../machine_learning/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Computación cuántica - Explorando QML</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fundamentos-de-computacion-cuantica" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Explorando QML" class="md-header__button md-logo" aria-label="Explorando QML" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Explorando QML
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Computación cuántica
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../introduccion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introducción
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Computación cuántica
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../machine_learning/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Machine Learning clásico
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Conexion_entre_ML_y_computacion_cuantica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Conexión ML ↔ QML
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Explorando QML" class="md-nav__button md-logo" aria-label="Explorando QML" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Explorando QML
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Computación cuántica
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Computación cuántica
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conceptos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conceptos clave
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conceptos clave">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-qubit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Qubit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-superposicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Superposición
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-entrelazamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Entrelazamiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-puertas-cuanticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Puertas cuánticas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-medicion-y-colapso" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Medición y colapso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cual-es-la-imporatancia-de-todo-esto" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Cual es la imporatancia de todo esto?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sabias-que" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Sabías que...?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-recomendados-para-ti" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos recomendados para ti
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../machine_learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Machine Learning clásico
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Conexion_entre_ML_y_computacion_cuantica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conexión ML ↔ QML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conceptos-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conceptos clave
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conceptos clave">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-qubit" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Qubit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-superposicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Superposición
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-entrelazamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Entrelazamiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-puertas-cuanticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Puertas cuánticas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-medicion-y-colapso" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Medición y colapso
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cual-es-la-imporatancia-de-todo-esto" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Cual es la imporatancia de todo esto?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sabias-que" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Sabías que...?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-recomendados-para-ti" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos recomendados para ti
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="fundamentos-de-computacion-cuantica"><strong>Fundamentos de Computación Cuántica</strong></h1>
+<p>Imagina que tienes un computador tan potente que puedes explorar miles de posibilidades al mismo tiempo, en lugar de hacerlo una por una.
+Eso es lo que permite la computación cuántica: aprovechar las leyes de la mecánica cuántica (la rama de la física que describe el comportamiento de las partículas más pequeñas del universo) para procesar información de formas que los computadores tradicionales no pueden.</p>
+<p>Mientras que un computador clásico usa bits (que solo pueden ser 0 o 1), un computador cuántico utiliza qubits, que pueden ser 0 y 1 al mismo tiempo.
+Esta propiedad, conocida como superposición, es lo que da a la computación cuántica su enorme poder de procesamiento paralelo.</p>
+<blockquote>
+<p>En lugar de probar una sola solución por vez, un computador cuántico puede explorar muchas posibilidades simultáneamente.</p>
+</blockquote>
+<hr />
+<h2 id="conceptos-clave"><strong>Conceptos clave</strong></h2>
+<h3 id="1-qubit">1. <strong>Qubit</strong></h3>
+<p>Un qubit es la unidad básica de información cuántica, equivalente al bit en la computación clásica.
+Pero con una gran diferencia:</p>
+<ul>
+<li>Un bit clásico solo puede ser 0 o 1.</li>
+<li>Un qubit puede ser una mezcla de ambos estados al mismo tiempo.</li>
+</ul>
+<p>Ejemplo:
+Piensa en una moneda girando en el aire. Mientras está girando, no es cara ni cruz, sino una combinación de ambas. Solo cuando la detienes (la “mides”) se convierte en una de las dos. </p>
+<h3 id="2-superposicion">2. <strong>Superposición</strong></h3>
+<p>Es la capacidad de un qubit para estar en varios estados simultáneamente.
+Gracias a esto, un computador cuántico puede realizar muchos cálculos al mismo tiempo, lo que lo hace clave para tareas como simulaciones científicas o búsquedas complejas.</p>
+<p>Ejemplo:
+Si quisieras encontrar la combinación correcta en una cerradura con 1000 opciones, un computador clásico probaría una por una.
+Un computador cuántico, en cambio, podría analizar todas las combinaciones al mismo tiempo.</p>
+<h3 id="3-entrelazamiento">3. <strong>Entrelazamiento</strong></h3>
+<p>El entrelazamiento cuántico es una conexión misteriosa entre qubits.
+Cuando dos qubits están entrelazados, lo que le pasa a uno afecta instantáneamente al otro, incluso si están a kilómetros de distancia.</p>
+<p>Ejemplo:
+Como si tuvieras dos dados mágicos: no importa dónde estén, si lanzas uno y sale 3, el otro automáticamente también mostrará 3.</p>
+<h3 id="4-puertas-cuanticas">4. <strong>Puertas cuánticas</strong></h3>
+<p>Las puertas cuánticas son operaciones que transforman los estados de los qubits, como los interruptores lógicos en un computador clásico, pero con una flexibilidad mucho mayor.
+Al aplicar diferentes puertas, puedes crear efectos de superposición o entrelazamiento.</p>
+<p>Ejemplos de puertas:</p>
+<ul>
+<li>
+<p><strong>Puerta X</strong>: Esta puerta invierte el valor del qubit.</p>
+<ul>
+<li>Si el qubit está en 0, pasa a 1.</li>
+<li>Si el qubit está en 1, pasa a 0.</li>
+<li>Es como un interruptor de luz: si está apagado, lo enciende; si está encendido, lo apaga.</li>
+</ul>
+</li>
+<li>
+<p><strong>Puerta Hadamard</strong>: Es una de las más importantes, porque convierte un estado fijo (0 o 1) en una superposición.</p>
+<ul>
+<li>Si aplicas la puerta Hadamard a 0, el qubit pasa a ser mitad 0 y mitad 1 al mismo tiempo.</li>
+<li>Es como poner una moneda a girar: mientras gira, no es cara ni cruz, sino una mezcla de las dos.</li>
+<li>Esto permite que los computadores cuánticos procesen muchas posibilidades simultáneamente.</li>
+</ul>
+</li>
+<li>
+<p><strong>Puerta CNOT</strong>: Esta puerta trabaja con dos qubits:</p>
+<ul>
+<li>El primero es el qubit de control.</li>
+<li>El segundo es el qubit objetivo.</li>
+<li>
+<p>La regla es simple:</p>
+<ul>
+<li>Si el qubit de control está en 0, no pasa nada.</li>
+<li>Si el qubit de control está en 1, el qubit objetivo cambia de estado (de 0 a 1 o de 1 a 0).</li>
+</ul>
+</li>
+<li>
+<p>¿Por qué es importante la puerta CNOT?</p>
+<p>Porque permite entrelazar dos qubits, es decir, crear una conexión entre ellos donde lo que le pase a uno afecta al otro.Ejemplo cotidiano: imagina dos
+   interruptores conectados mágicamente: cuando activas uno, el otro cambia instantáneamente sin importar la distancia.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-medicion-y-colapso">5. <strong>Medición y colapso</strong></h3>
+<p>En el mundo cuántico, medir algo cambia su estado.
+Cuando observas un qubit, este “colapsa” a uno de sus posibles valores (0 o 1), rompiendo la superposición.</p>
+<p>Ejemplo:
+Es como si la moneda girando (superposición) se detuviera: al mirarla, forzosamente se convierte en cara o cruz.</p>
+<hr />
+<h3 id="cual-es-la-imporatancia-de-todo-esto"><strong>¿Cual es la imporatancia de todo esto?</strong></h3>
+<p>Estas propiedas (Superposicion , entrelazamiento y puertas cuanticas) son base de el poder que tiene la computacion cuantica, gracias a ellas es que se dice que los computadores cuanticos prometen revolucionar campos como:</p>
+<ul>
+<li>Descubrimiento de nuevos medicamentos.</li>
+<li>Optimizar las inversiones y finanzas.</li>
+<li>La inteligencia artficial y el aprendizaje automatico.</li>
+<li>Simulacion de materiales y sistemas completos.</li>
+</ul>
+<hr />
+<h2 id="sabias-que"><strong>¿Sabías que...?</strong></h2>
+<p>El físico Richard Feynman fue uno de los primeros en decir “Necesitamos computadoras cuánticas para entender la naturaleza cuántica”  y tenía razón, en lugar de bits, estas máquinas usan qubits, que pueden estar en 0 y 1 al mismo tiempo tal como lo viste anteriormente, es como si pudieras estar dormido y despierto a la vez.
+Para que funcionen, deben estar más frías que el espacio exterior, a temperaturas cercanas al cero absoluto (-273 °C).
+Hoy empresas como IBM, Google y Amazon ya están construyendo computadoras cuánticas reales, y hasta puedes probar una desde tu navegador con IBM Q Experience.</p>
+<hr />
+<h2 id="recursos-recomendados-para-ti"><strong>Recursos recomendados para ti</strong></h2>
+<ul>
+<li><a href="https://qiskit.org/textbook">Introducción a la computación cuántica (IBM Qiskit)</a>  </li>
+<li>Video: <a href="https://www.youtube.com/watch?v=JhHMJCUmq28">Quantum Computers Explained (Kurzgesagt)</a>  </li>
+<li><a href="https://www.ibm.com/think/topics/qubit">¿Qué es un qubit? – IBM Think</a></li>
+<li><a href="https://stayrelevant.globant.com/es/technology/data-ai/4-preguntas-clave-para-entender-la-computacion-cuantica-una-tendencia-tecnologica-en-el-horizonte/?">4 preguntas clave para entender la Computación Cuántica(Luciana Gutsztat)</a></li>
+<li><a href="https://quantum.cloud.ibm.com/">IBM Q Experience</a></li>
+</ul>
+<hr />
+<p>Este módulo busca que comprendas las bases esenciales de la computación cuántica antes de conectar estos conceptos con el aprendizaje automático.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

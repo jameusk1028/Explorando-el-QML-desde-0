@@ -1,0 +1,810 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guía de estudio de Quantum Machine Learning (UAO)">
+      
+      
+      
+      
+        <link rel="prev" href="../Fundamentos_de_computacion_cuantica/">
+      
+      
+        <link rel="next" href="../Conexion_entre_ML_y_computacion_cuantica/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Machine Learning clásico - Explorando QML</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fundamentos-de-machine-learning-clasico" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Explorando QML" class="md-header__button md-logo" aria-label="Explorando QML" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Explorando QML
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Machine Learning clásico
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../introduccion/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introducción
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Fundamentos_de_computacion_cuantica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Computación cuántica
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Machine Learning clásico
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Conexion_entre_ML_y_computacion_cuantica/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Conexión ML ↔ QML
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Explorando QML" class="md-nav__button md-logo" aria-label="Explorando QML" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Explorando QML
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introducción
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Fundamentos_de_computacion_cuantica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Computación cuántica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Machine Learning clásico
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Machine Learning clásico
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conceptos-basicos-de-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conceptos básicos de Machine Learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conceptos básicos de Machine Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-regresion" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Regresión:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-clasificacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Clasificación:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-clustering-agrupamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Clustering (agrupamiento):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-redes-neuronales" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Redes neuronales:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-el-desafio-del-machine-learning-aprender-sin-pasarse-ni-quedarse-corto" class="md-nav__link">
+    <span class="md-ellipsis">
+      - El desafío del Machine Learning: aprender sin pasarse ni quedarse corto
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-es-importante" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Por qué es importante?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona-un-proyecto-de-ml" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Cómo funciona un proyecto de ML?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sabias-que" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Sabías que...?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-para-que-puedas-aprender-mas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos para que puedas aprender más
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Conexion_entre_ML_y_computacion_cuantica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conexión ML ↔ QML
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conceptos-basicos-de-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conceptos básicos de Machine Learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conceptos básicos de Machine Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-regresion" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Regresión:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-clasificacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Clasificación:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-clustering-agrupamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Clustering (agrupamiento):
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-redes-neuronales" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Redes neuronales:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-el-desafio-del-machine-learning-aprender-sin-pasarse-ni-quedarse-corto" class="md-nav__link">
+    <span class="md-ellipsis">
+      - El desafío del Machine Learning: aprender sin pasarse ni quedarse corto
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-es-importante" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Por qué es importante?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona-un-proyecto-de-ml" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Cómo funciona un proyecto de ML?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sabias-que" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Sabías que...?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos-para-que-puedas-aprender-mas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recursos para que puedas aprender más
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="fundamentos-de-machine-learning-clasico"><strong>Fundamentos de Machine Learning clásico</strong></h1>
+<p>El Machine Learning (ML) o aprendizaje automático, es una de las tecnologías más influyentes de nuestra era.
+Se trata de enseñar a las máquinas a aprender de los datos, a encontrar patrones y a tomar decisiones por sí mismas, sin que un programador tenga que escribir todas las reglas una por una.</p>
+<p>En otras palabras, el ML permite que los computadores aprendan de la experiencia, como lo haría una persona, pero con la capacidad de analizar millones de datos en segundos.</p>
+<blockquote>
+<p>En lugar de decirle al computador qué hacer, dejamos que descubra por sí mismo cómo hacerlo mejor.</p>
+</blockquote>
+<hr />
+<h2 id="conceptos-basicos-de-machine-learning"><strong>Conceptos básicos de Machine Learning</strong></h2>
+<h3 id="1-regresion">1. <strong>Regresión:</strong></h3>
+<p>Se usa para predecir valores numéricos.<br />
+Ejemplo: predecir el precio de una casa según su tamaño, ubicación y número de habitaciones.  </p>
+<h3 id="2-clasificacion">2. <strong>Clasificación:</strong></h3>
+<p>Sirve para asignar una categoría a cada dato.<br />
+Ejemplo: detectar si un correo es spam o no, o si una imagen contiene un perro o un gato.  </p>
+<h3 id="3-clustering-agrupamiento">3. <strong>Clustering (agrupamiento):</strong></h3>
+<p>Agrupa datos que no cuentan con etiquetas previas, buscando similitudes ocultas entre ellos.<br />
+Ejemplo: agrupar clientes de una tienda según su comportamiento de compra.  </p>
+<h3 id="4-redes-neuronales">4. <strong>Redes neuronales:</strong></h3>
+<p>Inspiradas en el cerebro humano, permiten reconocer imágenes, voz o lenguaje natural.<br />
+Ejemplo: asistentes como Siri o Alexa que captan tu voz y la procesan para responder inteligentemente.  </p>
+<h3 id="-el-desafio-del-machine-learning-aprender-sin-pasarse-ni-quedarse-corto">- <strong>El desafío del Machine Learning: aprender sin pasarse ni quedarse corto</strong></h3>
+<p>El objetivo del Machine Learning es lograr que un modelo aprenda bien los datos,<br />
+pero también generalice para funcionar con información nueva.</p>
+<ul>
+<li>Si aprende muy poco, no entiende los patrones eso es <strong>underfitting</strong>.</li>
+<li>Si aprende demasiado, memoriza los datos eso se llama <strong>overfitting</strong>.</li>
+</ul>
+<p>En resumen, el reto del Machine Learning está en aprender lo suficiente sin memorizarlo todo.<br />
+El equilibrio entre ambos es lo que convierte a un modelo en inteligente y útil.</p>
+<hr />
+<h2 id="por-que-es-importante"><strong>¿Por qué es importante?</strong></h2>
+<p>El Machine Learning está detrás de muchas de las herramientas y tecnologías que usamos todos los días:</p>
+<ul>
+<li>Recomendaciones personalizadas en YouTube, Netflix o Spotify.</li>
+<li>Reconocimiento facial para desbloquear el celular o detectar rostros en fotos.</li>
+<li>Motores de recomendación en Amazon o Mercado Libre que predicen qué podrías querer comprar.</li>
+<li>Diagnóstico asistido en medicina, donde modelos analizan radiografías o pruebas de laboratorio.</li>
+<li>Autos autónomos que aprenden a manejar observando millones de kilómetros recorridos.</li>
+</ul>
+<p>Todo esto funciona gracias a algoritmos que aprenden de los datos, mejoran con la práctica y ajustan sus predicciones constantemente.</p>
+<hr />
+<h2 id="como-funciona-un-proyecto-de-ml"><strong>¿Cómo funciona un proyecto de ML?</strong></h2>
+<p>Un flujo típico se ve así:  </p>
+<ol>
+<li><strong>Preparar los datos</strong>: Limpiar errores, seleccionar las variables más importantes.  </li>
+<li><strong>Elegir un modelo</strong>: Puede ser una regresión, árbol de decisión o red neuronal.</li>
+<li><strong>Entrenar el modelo</strong>: Alimentarlo con datos históricos para que aprenda patrones. </li>
+<li><strong>Validar y evaluar</strong>: Probar el modelo con nuevos datos y medir qué tan bien predice.</li>
+<li><strong>Ajustar y mejorar</strong>: Afinar parámetros y añadir más datos para mejorar resultados. </li>
+<li><strong>Implementar</strong>: Llevar el modelo al mundo real (por ejemplo, una app o un sistema de recomendación).  <blockquote>
+<p>En resumen: el Machine Learning aprende del pasado para predecir el futuro.</p>
+</blockquote>
+</li>
+</ol>
+<hr />
+<h2 id="sabias-que"><strong>¿Sabías que...?</strong></h2>
+<p>El término Machine Learning fue usado por primera vez en 1959 por Arthur Samuel, quien enseñó a una computadora a jugar damas y mejorar con la práctica.<br />
+Ese experimento fue el primer ejemplo de una máquina aprendiendo de la experiencia, justo lo que hacemos hoy con algoritmos más avanzados.</p>
+<hr />
+<h2 id="recursos-para-que-puedas-aprender-mas"><strong>Recursos para que puedas aprender más</strong></h2>
+<ul>
+<li><a href="https://www.ibm.com/mx-es/think/topics/machine-learning">IBM: ¿Qué es machine learning?</a></li>
+<li>Video: <a href="https://www.youtube.com/watch?v=ukzFI9rgwfU">¿Qué es Machine Learning? (Google Developers)</a>  </li>
+<li><a href="https://www.coursera.org/learn/machine-learning">Curso introductorio de ML – Coursera (Andrew Ng)</a>  </li>
+</ul>
+<hr />
+<p>Este módulo busca que cualquier persona, incluso sin ser experta en programación, pueda entender los fundamentos del aprendizaje automático clásico.<br />
+Lo importante es despertar la curiosidad: ¿cómo se comportan las máquinas cuando las enseñamos a aprender?  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
