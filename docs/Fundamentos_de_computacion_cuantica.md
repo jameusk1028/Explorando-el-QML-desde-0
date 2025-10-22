@@ -11,7 +11,7 @@ Esta propiedad, conocida como superposición, es lo que da a la computación cu�
 
 ## Conceptos clave
 
-### 1. Qubit
+### 1. **Qubit**
 Un qubit es la unidad básica de información cuántica, equivalente al bit en la computación clásica.
 Pero con una gran diferencia:
 
@@ -21,7 +21,7 @@ Pero con una gran diferencia:
 Ejemplo sencillo:
 Piensa en una moneda girando en el aire. Mientras está girando, no es cara ni cruz, sino una combinación de ambas. Solo cuando la detienes (la “mides”) se convierte en una de las dos. 
 
-### 2. Superposición
+### 2. **Superposición**
 Es la capacidad de un qubit para estar en varios estados simultáneamente.
 Gracias a esto, un computador cuántico puede realizar muchos cálculos al mismo tiempo, lo que lo hace clave para tareas como simulaciones científicas o búsquedas complejas.
 
@@ -29,14 +29,14 @@ Ejemplo:
 Si quisieras encontrar la combinación correcta en una cerradura con 1000 opciones, un computador clásico probaría una por una.
 Un computador cuántico, en cambio, podría analizar todas las combinaciones al mismo tiempo.
 
-### 3. Entrelazamiento 
+### 3. **Entrelazamiento** 
 El entrelazamiento cuántico es una conexión misteriosa entre qubits.
 Cuando dos qubits están entrelazados, lo que le pasa a uno afecta instantáneamente al otro, incluso si están a kilómetros de distancia.
 
 Ejemplo:
 Como si tuvieras dos dados mágicos: no importa dónde estén, si lanzas uno y sale 3, el otro automáticamente también mostrará 3.
 
-### 4. Puertas cuánticas
+### 4. **Puertas cuánticas**
 Las puertas cuánticas son operaciones que transforman los estados de los qubits, como los interruptores lógicos en un computador clásico, pero con una flexibilidad mucho mayor.
 Al aplicar diferentes puertas, puedes crear efectos de superposición o entrelazamiento.
 
@@ -66,6 +66,7 @@ Ejemplos de puertas:
           - Si el qubit de control está en 1, el qubit objetivo cambia de estado (de 0 a 1 o de 1 a 0).
   
       - ¿Por qué es importante?
+
        Porque permite entrelazar dos qubits, es decir, crear una conexión entre ellos donde lo que le pase a uno afecta al otro.
        Ejemplo cotidiano: imagina dos interruptores conectados mágicamente: cuando activas uno, el otro cambia instantáneamente sin importar la distancia.
 
