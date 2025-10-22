@@ -21,7 +21,7 @@ En conjunto, esto significa que un modelo cuántico puede aprender patrones más
 ## **Modelos de QML más estudiados**
 
 - **VQC (Variational Quantum Classifier):**  
-  Imagina que este modelo es como un "cerebro híbrido".  Usa un **circuito cuántico** (que procesa información con qubits) y un **optimizador clásico** (que ajusta los parámetros como lo haría un algoritmo de Machine Learning normal).  Su objetivo es **clasificar datos**, por ejemplo, distinguir entre imágenes de gatos y perros, pero aprovechando la potencia cuántica para hacerlo con menos recursos o más precisión.
+  Imagina que este modelo es como un cerebro híbrido que usa un circuito cuántico (que procesa información con qubits) y un optimizador clásico (que ajusta los parámetros como lo haría un algoritmo de Machine Learning normal).  Su objetivo es clasificar datos, por ejemplo, distinguir entre imágenes de gatos y perros, pero aprovechando la potencia cuántica para hacerlo con menos recursos o más precisión.
 
 - **QSVM (Quantum Support Vector Machine):**  
   Es la versión cuántica de las *máquinas de soporte vectorial*, un modelo clásico muy usado para separar datos en categorías.  
@@ -29,8 +29,7 @@ En conjunto, esto significa que un modelo cuántico puede aprender patrones más
   Piensa en esto como si tuvieras una lupa cuántica que te deja ver diferencias invisibles a simple vista.
 
 - **Kernels cuánticos:**  
-  En el ML clásico, un *kernel* es una forma de **convertir datos difíciles de separar en datos más fáciles de distinguir**.  
-  Los *kernels cuánticos* llevan esa idea al siguiente nivel: **transforman datos clásicos en representaciones cuánticas**, donde las relaciones entre ellos se vuelven más claras.  
+  En el ML clásico, un kernel es una forma de convertir datos difíciles de separar en datos más fáciles de distinguir, los kernels cuánticos llevan esa idea al siguiente nivel, transforman datos clásicos en representaciones cuánticas, donde las relaciones entre ellos se vuelven más claras.  
   Es como si el modelo pasara los datos a un “universo cuántico” donde puede encontrar patrones escondidos y clasificarlos con más facilidad.
 
 ---
