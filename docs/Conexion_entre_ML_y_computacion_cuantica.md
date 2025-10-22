@@ -20,17 +20,20 @@ En conjunto, esto significa que un modelo cuántico puede aprender patrones más
 
 ## **Modelos de QML más estudiados**
 
-- **VQC (Variational Quantum Classifier)**  
-  Modelo híbrido donde un circuito cuántico parametrizado aprende a separar clases de datos.  
+- **VQC (Variational Quantum Classifier):**  
+  Imagina que este modelo es como un "cerebro híbrido".  Usa un **circuito cuántico** (que procesa información con qubits) y un **optimizador clásico** (que ajusta los parámetros como lo haría un algoritmo de Machine Learning normal).  Su objetivo es **clasificar datos**, por ejemplo, distinguir entre imágenes de gatos y perros, pero aprovechando la potencia cuántica para hacerlo con menos recursos o más precisión.
 
-- **QSVM (Quantum Support Vector Machine)**  
-  Adaptación cuántica de las máquinas de soporte vectorial, usando kernels cuánticos.  
+- **QSVM (Quantum Support Vector Machine):**  
+  Es la versión cuántica de las *máquinas de soporte vectorial*, un modelo clásico muy usado para separar datos en categorías.  
+  En lugar de trabajar con datos normales, el QSVM **usa qubits para representar la información en espacios mucho más grandes y complejos**, lo que permite distinguir patrones que un modelo clásico no vería.  
+  Piensa en esto como si tuvieras una lupa cuántica que te deja ver diferencias invisibles a simple vista.
 
-- **Kernels cuánticos**  
-  Métodos que transforman datos clásicos en representaciones cuánticas para facilitar su separación en espacios complejos.  
+- **Kernels cuánticos:**  
+  En el ML clásico, un *kernel* es una forma de **convertir datos difíciles de separar en datos más fáciles de distinguir**.  
+  Los *kernels cuánticos* llevan esa idea al siguiente nivel: **transforman datos clásicos en representaciones cuánticas**, donde las relaciones entre ellos se vuelven más claras.  
+  Es como si el modelo pasara los datos a un “universo cuántico” donde puede encontrar patrones escondidos y clasificarlos con más facilidad.
 
 ---
-
 ## **Ejemplos de aplicaciones futuras**
 - **Química y materiales**: predecir propiedades moleculares con mayor precisión.  
 - **Finanzas**: optimización de portafolios y detección de fraudes.  
