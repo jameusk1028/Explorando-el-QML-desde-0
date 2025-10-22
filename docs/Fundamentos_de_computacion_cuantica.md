@@ -18,7 +18,7 @@ Pero con una gran diferencia:
 - Un bit clásico solo puede ser 0 o 1.
 - Un qubit puede ser una mezcla de ambos estados al mismo tiempo.
 
-Ejemplo sencillo:
+Ejemplo:
 Piensa en una moneda girando en el aire. Mientras está girando, no es cara ni cruz, sino una combinación de ambas. Solo cuando la detienes (la “mides”) se convierte en una de las dos. 
 
 ### 2. **Superposición**
