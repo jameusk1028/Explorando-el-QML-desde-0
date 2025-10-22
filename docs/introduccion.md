@@ -1,9 +1,12 @@
 # Introducción 
 
 ¿Te imaginas un computador capaz de resolver en segundos problemas que hoy en día tomarían miles de años?  
-Ese es el poder que promete el Quantum Machine Learning (QML), un área emergente que une la computación cuántica con el aprendizaje automático.  
+Esa es la promesa que nos hace el Quantum Machine Learning (QML) un campo emergente donde la computacion cuantica se encuentra con la inteligencia artificial dandonos lo mejor de cada una y asi abrir paso a una nueva era de procesamiento de informacion. 
 
-Lejos de ser ciencia ficción, el QML es un campo real que está creciendo a gran velocidad y que pronto transformará industrias enteras. Su objetivo es usar los principios cuánticos para procesar información de una forma que va mucho más allá de lo que puede lograr un computador clásico.  
+Lejos de ser ciencia ficción, el QML ya está empezando a transformar la forma en que entendemos el aprendizaje automático.
+Su propósito es aprovechar las leyes de la mecánica cuántica para procesar datos de una manera mucho más eficiente y poderosa que los sistemas clásicos actuales.
+
+En otras palabras: el QML combina la capacidad de “aprender” de las máquinas con el poder cuántico que nos ofrece la naturaleza. 
 
 ---
 
@@ -15,14 +18,15 @@ El QML abre la puerta a avances increíbles en áreas como:
 - Análisis de grandes bases de datos  
 - Inteligencia artificial más potente y eficiente  
 
-En pocas palabras: nos ayuda a pensar y crear soluciones en niveles que antes parecían imposibles.  
+En pocas palabras: nos ayuda a pensar y crear soluciones en niveles que antes parecían imposibles lo cual la hace tan importante.  
 
 ---
 
 ## Recursos que te recomendamos ver para empezar
 - [IBM: Introduction to quantum computing](https://quantum.cloud.ibm.com/learning/es/courses/quantum-business-foundations/introduction-to-quantum-computing?utm)  
 - Video: [Quantum Machine Learning - Tomas Tagliani](https://youtu.be/F_E39gBPRF4?si=90icl8af6b6PgX15)  
-- Video: [¿Qué es la computación cuántica? (YouTube, Qiskit)](https://www.youtube.com/watch?v=JhHMJCUmq28)  
+- Video: [¿Qué es la computación cuántica? (YouTube, Qiskit)](https://www.youtube.com/watch?v=JhHMJCUmq28)
+- Video: [Quantum Machine Learning - 01 - Introduction](https://www.youtube.com/watch?v=QtWCmO_KIlg)
 
 ---
 
