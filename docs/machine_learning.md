@@ -9,20 +9,27 @@ En otras palabras, el ML permite que los computadores aprendan de la experiencia
 
 ---
 
-##  Conceptos básicos de Machine Learning
+##  **Conceptos básicos de Machine Learning**
 1. **Regresion**:
+   
    Se usa para poder predecir valores numericos.
 
     Ejemplo: Predecir el precio de una casa segun su tamaño, ubicacion y numero de habitaciones.
-3. **Clasificacion**:
+   
+2. **Clasificacion**:
+   
    Sirve para asignar una categoria a cada dato.
 
     Ejemplo: Detectar si un correo es spam o no, o si una imagen contiene un perro o un gato.
-5. **Clustering (agrupamiento)**:
+   
+3. **Clustering (agrupamiento)**:
+   
    Agrupa datos que no cuentan con etiquetas previas, buscando simiitudes ocultas entre cada uno de ellos.
  
    Ejemplo: Agrupar clientes de una tienda segun su comportamiento de compra.
-6. **Redes neuronales**:
+   
+4. **Redes neuronales**:
+
    Estas son inspiradas en el cerebro humano, son las que permiten reconocer imagenes, voz o lenguaje natural.
 
    Ejemplo: Asistentes como Siri o Alexa que captan tu voz y la procesan para poder responder inteligentemente
