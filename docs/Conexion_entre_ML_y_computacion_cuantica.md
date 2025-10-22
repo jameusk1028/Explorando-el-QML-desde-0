@@ -63,10 +63,9 @@ Aquí te dejamos algunos de los usos más prometedores:
 ---
 
 ## **¿Sabias que...?**
-El Quantum Machine Learning todavía está en sus primeros pasos, pero ya se están ejecutando modelos reales en computadoras cuánticas accesibles desde internet.  
-Plataformas como IBM Quantum y Google Quantum AI permiten probar algoritmos de QML desde cualquier lugar del mundo.  
-Incluso, algunos estudiantes ya han creado clasificadores cuánticos simples que pueden aprender a distinguir patrones básicos, combinando código Python con circuitos cuánticos.  
-Lo que hoy son pequeños experimentos, en el futuro podría convertirse en una nueva generación de inteligencia artificial cuántica.
+El Quantum Machine Learning ya ha logrado resultados reales usando apenas unos pocos qubits.
+Por ejemplo: investigadores de IBM y MIT entrenaron un modelo de QML para reconocer imágenes simples utilizando solo 4 qubits, demostrando que incluso los primeros procesadores cuánticos pueden aprender.  
+Aunque todavía estamos lejos de una IA cuántica completa, estos experimentos muestran que el futuro del aprendizaje automático podría ser literalmente cuántico.
 
 ---
 
