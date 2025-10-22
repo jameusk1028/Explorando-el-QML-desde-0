@@ -32,7 +32,7 @@ En resumen: la computación cuántica aporta velocidad, capacidad y profundidad,
   Imagina que este modelo es como un cerebro híbrido que usa un circuito cuántico (que procesa información con qubits) y un optimizador clásico (que ajusta los parámetros como lo haría un algoritmo de Machine Learning normal).  Su objetivo es clasificar datos, por ejemplo, distinguir entre imágenes de gatos y perros, pero aprovechando la potencia cuántica para hacerlo con menos recursos o más precisión.
 
 - **QSVM (Quantum Support Vector Machine):**  
-  Es la versión cuántica de las *máquinas de soporte vectorial*, un modelo clásico muy usado para separar datos en categorías.  
+  Es la versión cuántica de las máquinas de soporte vectorial, un modelo clásico muy usado para separar datos en categorías.  
   En lugar de trabajar con datos normales, el QSVM usa qubits para representar la información en espacios mucho más grandes y complejos, lo que permite distinguir patrones que un modelo clásico no vería.  
   Piensa en esto como si tuvieras una lupa cuántica que te deja ver diferencias invisibles a simple vista.
 
@@ -42,10 +42,16 @@ En resumen: la computación cuántica aporta velocidad, capacidad y profundidad,
 
 ---
 ## **Ejemplos de aplicaciones futuras**
-- **Química y materiales**: predecir propiedades moleculares con mayor precisión.  
-- **Finanzas**: optimización de portafolios y detección de fraudes.  
-- **Salud**: análisis de datos genómicos para medicina personalizada.  
-- **IA avanzada**: redes neuronales cuánticas para tareas de reconocimiento y predicción.  
+El Quantum Machine Learning (QML) está comenzando a transformar distintos campos al combinar la potencia del aprendizaje automático con la capacidad cuántica de procesar información.  
+Aquí te dejamos algunos de los usos más prometedores: 
+- **Quimica y materiales:** Simulación de moléculas y reacciones químicas con una precisión imposible para los computadores clásicos77
+    - Ejemplo: Predecir cómo reaccionará un nuevo medicamento antes de fabricarlo o diseñar materiales más resistentes y livianos para aviones o baterías.
+- **Finanzas**: Análisis de millones de transacciones en segundos para detectar fraudes o predecir comportamientos del mercado.
+- **Salud y biotecnologia**: Procesamiento de datos genómicos para desarrollar tratamientos personalizados y descubrir nuevas terapias.  
+- **IA avanzada**: Redes neuronales cuánticas que reconocen voz, imágenes y patrones complejos con más rapidez.
+- **Medio ambiente y sostenibilidad**: Modelos cuánticos para optimizar el consumo energético y mejorar predicciones climáticas.
+- **Ciberseguridad**: Uso de criptografía cuántica y algoritmos QML para detectar intrusiones y proteger datos en tiempo real.  
+- **Transporte y logistica**: Optimización de rutas y distribución de recursos a gran escala.  
 
 ---
 
