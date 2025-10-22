@@ -43,24 +43,29 @@ Al aplicar diferentes puertas, puedes crear efectos de superposición o entrelaz
 Ejemplos de puertas:
 
 - **Puerta X**: Esta puerta invierte el valor del qubit.
+
       - Si el qubit está en 0, pasa a 1.
       - Si el qubit está en 1, pasa a 0.
       - Es como un interruptor de luz: si está apagado, lo enciende; si está encendido, lo apaga.
 
 - **Puerta Hadamard**: Es una de las más importantes, porque convierte un estado fijo (0 o 1) en una superposición.
-  - Si aplicas la puerta Hadamard a |0⟩, el qubit pasa a ser mitad 0 y mitad 1 al mismo tiempo.
-  - Es como poner una moneda a girar: mientras gira, no es cara ni cruz, sino una mezcla de las dos.
-  - Esto permite que los computadores cuánticos procesen muchas posibilidades simultáneamente.
+
+      - Si aplicas la puerta Hadamard a |0⟩, el qubit pasa a ser mitad 0 y mitad 1 al mismo tiempo.
+      - Es como poner una moneda a girar: mientras gira, no es cara ni cruz, sino una mezcla de las dos.
+      - Esto permite que los computadores cuánticos procesen muchas posibilidades simultáneamente.
 
 - **Puerta CNOT**:Esta puerta trabaja con dos qubits:
-  - El primero es el qubit de control.
-  - El segundo es el qubit objetivo.
-  - La regla es simple:
-    - Si el qubit de control está en 0, no pasa nada.
-    - Si el qubit de control está en 1, el qubit objetivo cambia de estado (de 0 a 1 o de 1 a 0).
-  - ¿Por qué es importante?
-    Porque permite entrelazar dos qubits, es decir, crear una conexión entre ellos donde lo que le pase a uno afecta al otro.
-  - Ejemplo cotidiano: imagina dos interruptores conectados mágicamente: cuando activas uno, el otro cambia instantáneamente sin importar la distancia.
+  
+      - El primero es el qubit de control.
+      - El segundo es el qubit objetivo.
+      - La regla es simple:
+  
+          - Si el qubit de control está en 0, no pasa nada.
+          - Si el qubit de control está en 1, el qubit objetivo cambia de estado (de 0 a 1 o de 1 a 0).
+  
+      - ¿Por qué es importante?
+       Porque permite entrelazar dos qubits, es decir, crear una conexión entre ellos donde lo que le pase a uno afecta al otro.
+       Ejemplo cotidiano: imagina dos interruptores conectados mágicamente: cuando activas uno, el otro cambia instantáneamente sin importar la distancia.
 
 ### 5. Medición y colapso
 En el mundo cuántico, medir algo cambia su estado.
