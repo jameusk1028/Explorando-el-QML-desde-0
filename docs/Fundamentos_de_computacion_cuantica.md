@@ -51,7 +51,7 @@ Ejemplos de puertas:
 
 - **Puerta Hadamard**: Es una de las más importantes, porque convierte un estado fijo (0 o 1) en una superposición.
 
-      - Si aplicas la puerta Hadamard a |0⟩, el qubit pasa a ser mitad 0 y mitad 1 al mismo tiempo.
+      - Si aplicas la puerta Hadamard a 0, el qubit pasa a ser mitad 0 y mitad 1 al mismo tiempo.
       - Es como poner una moneda a girar: mientras gira, no es cara ni cruz, sino una mezcla de las dos.
       - Esto permite que los computadores cuánticos procesen muchas posibilidades simultáneamente.
 
