@@ -1,4 +1,4 @@
-# Conexión entre Machine Learning y la Computación Cuántica 
+# **Conexión entre Machine Learning y la Computación Cuántica** 
 
 El Quantum Machine Learning (QML) combina lo mejor de dos mundos:  
 - La computación cuántica, que puede explorar enormes espacios de información gracias a fenómenos como la superposición y el entrelazamiento.  
@@ -8,7 +8,7 @@ El resultado: Modelos híbridos capaces de abordar problemas que hoy resultan im
 
 ---
 
-## ¿Qué aporta lo cuántico al ML?
+## **¿Qué aporta lo cuántico al ML?**
 
 - **Espacios de alta dimensión:** los qubits permiten representar información en un espacio de Hilbert mucho mayor que los bits clásicos.  
 - **Paralelismo cuántico:** gracias a la superposición, un sistema cuántico puede procesar muchas configuraciones de datos a la vez.  
@@ -17,7 +17,7 @@ El resultado: Modelos híbridos capaces de abordar problemas que hoy resultan im
 
 ---
 
-## Modelos de QML más estudiados
+## **Modelos de QML más estudiados**
 
 - **VQC (Variational Quantum Classifier)**  
   Modelo híbrido donde un circuito cuántico parametrizado aprende a separar clases de datos.  
@@ -30,7 +30,7 @@ El resultado: Modelos híbridos capaces de abordar problemas que hoy resultan im
 
 ---
 
-## Ejemplos de aplicaciones futuras
+## **Ejemplos de aplicaciones futuras**
 - **Química y materiales**: predecir propiedades moleculares con mayor precisión.  
 - **Finanzas**: optimización de portafolios y detección de fraudes.  
 - **Salud**: análisis de datos genómicos para medicina personalizada.  
@@ -38,11 +38,11 @@ El resultado: Modelos híbridos capaces de abordar problemas que hoy resultan im
 
 ---
 
-## Recursos recomendados para ti
-- [Computación cuántica | Iberdrola](https://www.iberdrola.com/innovacion/que-es-computacion-cuantica)  
-- [Introducción a la computación cuántica | Microsoft Learn](https://learn.microsoft.com/es-es/azure/quantum/overview-understanding-quantum-computing)  
+## **Recursos recomendados para ti**
+- [Computación cuántica | Iberdrola](https://www.iberdrola.com/innovacion/que-es-computacion-cuantica)   
 - [Tutorial de Machine Learning | Interactive Chaos](https://interactivechaos.com/es/manual/tutorial-de-machine-learning/tutorial-de-machine-learning)  
-- Video: [Machine Learning explicado de forma sencilla (YouTube)](https://www.youtube.com/watch?v=n-DflQldMuc)  
+- Video: [Machine Learning explicado de forma sencilla (YouTube)](https://www.youtube.com/watch?v=n-DflQldMuc)
+- - Video: [Quantum Machine Learning - Tomas Tagliani](https://youtu.be/F_E39gBPRF4?si=90icl8af6b6PgX15) 
 
 ---
 Esta sección marca el puente entre los fundamentos clásicos y las posibilidades cuánticas, preparando el terreno para la futura sección de Exploración práctica.
