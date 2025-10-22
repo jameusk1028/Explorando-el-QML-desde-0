@@ -73,14 +73,14 @@ Ejemplos de puertas:
        Ejemplo cotidiano: imagina dos interruptores conectados mágicamente: cuando activas uno, el otro cambia instantáneamente sin importar la distancia.
 
 
-### 5. Medición y colapso
+### 5. **Medición y colapso**
 En el mundo cuántico, medir algo cambia su estado.
 Cuando observas un qubit, este “colapsa” a uno de sus posibles valores (0 o 1), rompiendo la superposición.
 
 Ejemplo:
 Es como si la moneda girando (superposición) se detuviera: al mirarla, forzosamente se convierte en cara o cruz.
 
-### ¿Cual es la imporatancia de todo esto?
+### **¿Cual es la imporatancia de todo esto?**
 Estas propiedas (Superposicion , entrelazamiento y puertas cuanticas) son base de el poder que tiene la computacion cuantica, gracias a ellas es que se dice que los computadores cuanticos prometen revolucionar campos como:
 
 - Descubrimiento de nuevos medicamentos.
