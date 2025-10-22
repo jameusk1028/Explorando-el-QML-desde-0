@@ -11,10 +11,10 @@ Una guía “de la curiosidad a la capacidad técnica” para estudiantes e inve
 ---
 
 ## El contenido que encontraras
-1. [Introducción](./introduccion.md)  
-2. [Fundamentos de computación cuántica](./Fundamentos_de_computacion_cuantica.md)  
-3. [Fundamentos de Machine Learning clásico](./machine_Learning.md)  
-4. [Conexión entre ML y lo cuántico](./Conexion_entre_ML_y_computacion_cuantica.md)  
+1. [Introducción](./introduccion.md) | Qué es el QML y por qué es tan prometedor. |
+2. [Fundamentos de computación cuántica](./Fundamentos_de_computacion_cuantica.md) | Conceptos como qubits, superposición y entrelazamiento. | 
+3. [Fundamentos de Machine Learning clásico](./machine_Learning.md) | Cómo aprenden las máquinas a partir de datos. | 
+4. [Conexión entre ML y lo cuántico](./Conexion_entre_ML_y_computacion_cuantica.md) | El punto donde lo cuántico y lo clásico se encuentran. | 
 
 ---
 
