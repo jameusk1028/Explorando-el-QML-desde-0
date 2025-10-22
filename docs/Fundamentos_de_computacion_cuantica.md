@@ -48,11 +48,13 @@ Ejemplos de puertas:
       - Si el qubit está en 1, pasa a 0.
       - Es como un interruptor de luz: si está apagado, lo enciende; si está encendido, lo apaga.
 
+
 - **Puerta Hadamard**: Es una de las más importantes, porque convierte un estado fijo (0 o 1) en una superposición.
 
       - Si aplicas la puerta Hadamard a |0⟩, el qubit pasa a ser mitad 0 y mitad 1 al mismo tiempo.
       - Es como poner una moneda a girar: mientras gira, no es cara ni cruz, sino una mezcla de las dos.
       - Esto permite que los computadores cuánticos procesen muchas posibilidades simultáneamente.
+
 
 - **Puerta CNOT**:Esta puerta trabaja con dos qubits:
   
@@ -66,6 +68,7 @@ Ejemplos de puertas:
       - ¿Por qué es importante?
        Porque permite entrelazar dos qubits, es decir, crear una conexión entre ellos donde lo que le pase a uno afecta al otro.
        Ejemplo cotidiano: imagina dos interruptores conectados mágicamente: cuando activas uno, el otro cambia instantáneamente sin importar la distancia.
+
 
 ### 5. Medición y colapso
 En el mundo cuántico, medir algo cambia su estado.
