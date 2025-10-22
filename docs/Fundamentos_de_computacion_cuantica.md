@@ -56,7 +56,7 @@ Ejemplos de puertas:
       - Esto permite que los computadores cuánticos procesen muchas posibilidades simultáneamente.
 
 
-- **Puerta CNOT**:Esta puerta trabaja con dos qubits:
+- **Puerta CNOT**: Esta puerta trabaja con dos qubits:
   
       - El primero es el qubit de control.
       - El segundo es el qubit objetivo.
