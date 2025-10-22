@@ -62,6 +62,14 @@ Aquí te dejamos algunos de los usos más prometedores:
 
 ---
 
+## **¿Sabias que...?
+El Quantum Machine Learning todavía está en sus primeros pasos, pero ya se están ejecutando modelos reales en computadoras cuánticas accesibles desde internet.  
+Plataformas como IBM Quantum y Google Quantum AI permiten probar algoritmos de QML desde cualquier lugar del mundo.  
+Incluso, algunos estudiantes ya han creado clasificadores cuánticos simples que pueden aprender a distinguir patrones básicos, combinando código Python con circuitos cuánticos.  
+Lo que hoy son pequeños experimentos, en el futuro podría convertirse en una nueva generación de inteligencia artificial cuántica.
+
+---
+
 ## **Recursos recomendados para ti**
 - Video: [Quantum Machine Learning - Tomas Tagliani](https://youtu.be/F_E39gBPRF4?si=90icl8af6b6PgX15)
 - Video: [Quantum machine learning aplicado - CoreDevX](https://www.youtube.com/watch?v=MDfilHEYyMY)
