@@ -28,17 +28,17 @@ Ejemplo: agrupar clientes de una tienda según su comportamiento de compra.
 4. **Redes neuronales:**  
 Inspiradas en el cerebro humano, permiten reconocer imágenes, voz o lenguaje natural.  
 Ejemplo: asistentes como Siri o Alexa que captan tu voz y la procesan para responder inteligentemente.
+-
 
 - **El desafío del Machine Learning: aprender sin pasarse ni quedarse corto**  
 El objetivo del Machine Learning es lograr que un modelo aprenda bien los datos,  
-pero también generalice para funcionar con información nueva.  
+pero también generalice para funcionar con información nueva.
 
   - Si aprende demasiado, memoriza los datos → a eso se le llama **overfitting**.  
   - Si aprende muy poco, no entiende los patrones → eso es **underfitting**.  
 
 En resumen, el reto del Machine Learning está en aprender lo suficiente sin memorizarlo todo.  
 El equilibrio entre ambos es lo que convierte a un modelo en inteligente y útil.
-
 
 ---
 ## ¿Por qué es importante?
