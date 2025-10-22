@@ -1,34 +1,44 @@
 # Fundamentos de Machine Learning clásico 
 
-El Machine Learning (ML) es una de las tecnologías más influyentes de nuestra era.  
-Se trata de enseñar a las máquinas a aprender de los datos, detectar patrones y tomar decisiones sin que un programador tenga que escribir todas las reglas paso a paso.
+El Machine Learning (ML) o aprendizaje automático, es una de las tecnologías más influyentes de nuestra era.
+Se trata de enseñar a las máquinas a aprender de los datos, a encontrar patrones y a tomar decisiones por sí mismas, sin que un programador tenga que escribir todas las reglas una por una.
 
-En pocas palabras: el ML permite que los computadores aprendan de la experiencia, como lo haría un ser humano, pero con la capacidad de analizar millones de datos en segundos.
+En otras palabras, el ML permite que los computadores aprendan de la experiencia, como lo haría una persona, pero con la capacidad de analizar millones de datos en segundos.
 
----
-
-## ¿Por qué es importante?
-El ML está detrás de muchas de las cosas que usamos a diario:
-- Recomendaciones en YouTube, Netflix o Spotify.  
-- Reconocimiento facial en nuestros celulares.  
-- Motores de recomendación en Amazon o Mercado Libre.  
-- Diagnóstico asistido en medicina.  
-- Autos que se manejan solos.  
+>En lugar de decirle al computador qué hacer, dejamos que descubra por sí mismo cómo hacerlo mejor.
 
 ---
 
-##  Conceptos básicos de ML
-- **Regresión**: predecir valores numéricos (ej: precio de una casa).  
-- **Clasificación**: asignar categorías (ej: correo spam vs. no spam).  
-- **Clustering**: agrupar datos sin etiquetas previas (ej: segmentar clientes).  
-- **Redes neuronales**: modelos inspirados en el cerebro humano que pueden reconocer imágenes, voz y lenguaje.  
+##  Conceptos básicos de Machine Learning
+1. **Regresion**:
+   Se usa para poder predecir valores numericos.
+   Ejemplo: Predecir el precio de una casa segun su tamaño, ubicacion y numero de habitaciones.
+2. **Clasificacion**:
+   Sirve para asignar una categoria a cada dato.
+   Ejemplo: Detectar si un correo es spam o no, o si una imagen contiene un perro o un gato.
+3. **Clustering (agrupamiento)**:
+   Agrupa datos que no cuentan con etiquetas previas, buscando simiitudes ocultas entre cada uno de ellos.
+   Ejemplo: Agrupar clientes de una tienda segun su comportamiento de compra.
+4. **Redes neuronales**:
+   Estas son inspiradas en el cerebro humano, son las que permiten reconocer imagenes, voz o lenguaje natural.
+   Ejemplo: Asistentes como Siri o Alexa que captan tu voz y la procesan para poder responder inteligentemente
 
 > El reto clave del ML es lograr un equilibrio entre aprender bien los datos y generalizar a situaciones nuevas.  
  > - Si un modelo memoriza demasiado → *overfitting*.  
  > - Si aprende muy poco → *underfitting*.  
 
 ---
+## ¿Por qué es importante?
+El Machine Learning está detrás de muchas de las herramientas y tecnologías que usamos todos los días:
+- Recomendaciones personalizadas en YouTube, Netflix o Spotify.
+- Reconocimiento facial para desbloquear el celular o detectar rostros en fotos.
+- Motores de recomendación en Amazon o Mercado Libre que predicen qué podrías querer comprar.
+- Diagnóstico asistido en medicina, donde modelos analizan radiografías o pruebas de laboratorio.
+- Autos autónomos que aprenden a manejar observando millones de kilómetros recorridos.
 
+Todo esto funciona gracias a algoritmos que aprenden de los datos, mejoran con la práctica y ajustan sus predicciones constantemente. 
+
+---
 ## ¿Cómo funciona un proyecto de ML?
 Un flujo típico se ve así:  
 
