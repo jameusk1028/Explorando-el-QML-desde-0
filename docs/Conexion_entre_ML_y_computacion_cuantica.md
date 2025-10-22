@@ -57,10 +57,9 @@ Aquí te dejamos algunos de los usos más prometedores:
 ---
 
 ## **Recursos recomendados para ti**
-- [Computación cuántica | Iberdrola](https://www.iberdrola.com/innovacion/que-es-computacion-cuantica)   
-- [Tutorial de Machine Learning | Interactive Chaos](https://interactivechaos.com/es/manual/tutorial-de-machine-learning/tutorial-de-machine-learning)  
-- Video: [Machine Learning explicado de forma sencilla (YouTube)](https://www.youtube.com/watch?v=n-DflQldMuc)
-- Video: [Quantum Machine Learning - Tomas Tagliani](https://youtu.be/F_E39gBPRF4?si=90icl8af6b6PgX15) 
+- Video: [Quantum Machine Learning - Tomas Tagliani](https://youtu.be/F_E39gBPRF4?si=90icl8af6b6PgX15)
+- Video: [Quantum machine learning aplicado - CoreDevX](https://www.youtube.com/watch?v=MDfilHEYyMY)
+- [Cómo empezar a estudiar aprendizaje automático cuántico - Matheus Cammarosano](https://matheuscammarosanohidalgo.medium.com/how-to-start-studying-quantum-machine-learning-32be03961e6c)
 
 ---
 Esta sección marca el puente entre los fundamentos clásicos y las posibilidades cuánticas, preparando el terreno para la futura sección de Exploración práctica.
