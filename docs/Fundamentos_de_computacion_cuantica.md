@@ -93,8 +93,7 @@ Estas propiedas (Superposicion , entrelazamiento y puertas cuanticas) son base d
 
 ## **¿Sabías que...?**
 
-El físico Richard Feynman fue uno de los primeros en decir “Necesitamos computadoras cuánticas para entender la naturaleza cuántica”  
-Y tenía razón, en lugar de bits, estas máquinas usan qubits, que pueden estar en 0 y 1 al mismo tiempo tal como lo viste anteriormente, es como si pudieras estar dormido y despierto a la vez.
+El físico Richard Feynman fue uno de los primeros en decir “Necesitamos computadoras cuánticas para entender la naturaleza cuántica”  y tenía razón, en lugar de bits, estas máquinas usan qubits, que pueden estar en 0 y 1 al mismo tiempo tal como lo viste anteriormente, es como si pudieras estar dormido y despierto a la vez.
 Para que funcionen, deben estar más frías que el espacio exterior, a temperaturas cercanas al cero absoluto (-273 °C).
 Hoy empresas como IBM, Google y Amazon ya están construyendo computadoras cuánticas reales, y hasta puedes probar una desde tu navegador con IBM Q Experience.
 
