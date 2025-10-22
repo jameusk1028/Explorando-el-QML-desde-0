@@ -10,18 +10,16 @@ El resultado: Modelos híbridos capaces de resolver problemas que hoy serían im
 ## **¿Qué aporta lo cuántico al Machine Learning?**
 
 - **Espacios de alta dimensión:**  
-  Los *qubits* pueden representar muchos estados al mismo tiempo, creando espacios de información enormes.  
-  Esto permite que los modelos cuánticos capten relaciones que los algoritmos clásicos no pueden ver.
+Los qubits pueden representar muchos estados al mismo tiempo, creando espacios de información enormes, esto permite que los modelos cuánticos capten relaciones que los algoritmos clásicos no pueden ver.
 
 - **Paralelismo cuántico:**  
-  Gracias a la superposición, un computador cuántico puede explorar múltiples soluciones simultáneamente, en lugar de probar una por una como haría un computador tradicional.
+Gracias a la superposición, un computador cuántico puede explorar múltiples soluciones simultáneamente, en lugar de probar una por una como haría un computador tradicional.
 
 - **Entrelazamiento:**  
-  Los qubits pueden estar conectados entre sí de una manera que, si cambias uno, el otro también cambia instantáneamente.  
-  Esto permite que los modelos cuánticos encuentren patrones conjuntos entre datos distantes o relacionados.
+Los qubits pueden estar conectados entre sí de una manera que, si cambias uno, el otro también cambia instantáneamente, esto permite que los modelos cuánticos encuentren patrones conjuntos entre datos distantes o relacionados.
 
 - **Ventaja algorítmica:**  
-  Algunos algoritmos cuánticos pueden acelerar tareas muy demandantes, como la optimización o la clasificación, reduciendo el tiempo de entrenamiento de los modelos.
+Algunos algoritmos cuánticos pueden acelerar tareas muy demandantes, como la optimización o la clasificación, reduciendo el tiempo de entrenamiento de los modelos.
 
 En resumen: la computación cuántica aporta velocidad, capacidad y profundidad, ayudando a los modelos de Machine Learning a aprender patrones complejos con menos datos y más eficiencia.
 
