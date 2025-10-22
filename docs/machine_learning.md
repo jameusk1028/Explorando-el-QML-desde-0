@@ -33,8 +33,8 @@ Ejemplo: asistentes como Siri o Alexa que captan tu voz y la procesan para respo
 El objetivo del Machine Learning es lograr que un modelo aprenda bien los datos,  
 pero también generalice para funcionar con información nueva.
 
-    - Si aprende demasiado, memoriza los datos eso se llama **overfitting**.
-    - Si aprende muy poco, no entiende los patrones eso es **underfitting**.    
+  - Si aprende muy poco, no entiende los patrones eso es **underfitting**.
+  - Si aprende demasiado, memoriza los datos eso se llama **overfitting**.
 
 En resumen, el reto del Machine Learning está en aprender lo suficiente sin memorizarlo todo.  
 El equilibrio entre ambos es lo que convierte a un modelo en inteligente y útil.
