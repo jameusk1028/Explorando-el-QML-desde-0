@@ -7,14 +7,24 @@ El resultado: Modelos híbridos capaces de resolver problemas que hoy serían im
 
 ---
 
-## **¿Qué aporta lo cuántico al ML?**
+## **¿Qué aporta lo cuántico al Machine Learning?**
 
-- **Espacios de alta dimensión:** los qubits pueden representar información en un espacio mucho más amplio que los bits clásicos.  
-- **Paralelismo cuántico:** gracias a la superposición, un sistema cuántico puede explorar muchas soluciones a la vez.   
-- **Paralelismo cuántico:** gracias a la superposición, un sistema cuántico puede explorar muchas soluciones a la vez.    
-- **Ventaja algorítmica:** algunos algoritmos cuánticos prometen acelerar procesos de optimización y clasificación.
+- **Espacios de alta dimensión:**  
+  Los *qubits* pueden representar muchos estados al mismo tiempo, creando espacios de información enormes.  
+  Esto permite que los modelos cuánticos capten relaciones que los algoritmos clásicos no pueden ver.
 
-En conjunto, esto significa que un modelo cuántico puede aprender patrones más complejos con menos datos y en menos tiempo.
+- **Paralelismo cuántico:**  
+  Gracias a la superposición, un computador cuántico puede explorar múltiples soluciones simultáneamente, en lugar de probar una por una como haría un computador tradicional.
+
+- **Entrelazamiento:**  
+  Los qubits pueden estar conectados entre sí de una manera que, si cambias uno, el otro también cambia instantáneamente.  
+  Esto permite que los modelos cuánticos encuentren patrones conjuntos entre datos distantes o relacionados.
+
+- **Ventaja algorítmica:**  
+  Algunos algoritmos cuánticos pueden acelerar tareas muy demandantes, como la optimización o la clasificación, reduciendo el tiempo de entrenamiento de los modelos.
+
+En resumen: la computación cuántica aporta velocidad, capacidad y profundidad, ayudando a los modelos de Machine Learning a aprender patrones complejos con menos datos y más eficiencia.
+
 
 ---
 
@@ -25,7 +35,7 @@ En conjunto, esto significa que un modelo cuántico puede aprender patrones más
 
 - **QSVM (Quantum Support Vector Machine):**  
   Es la versión cuántica de las *máquinas de soporte vectorial*, un modelo clásico muy usado para separar datos en categorías.  
-  En lugar de trabajar con datos normales, el QSVM **usa qubits para representar la información en espacios mucho más grandes y complejos**, lo que permite distinguir patrones que un modelo clásico no vería.  
+  En lugar de trabajar con datos normales, el QSVM usa qubits para representar la información en espacios mucho más grandes y complejos, lo que permite distinguir patrones que un modelo clásico no vería.  
   Piensa en esto como si tuvieras una lupa cuántica que te deja ver diferencias invisibles a simple vista.
 
 - **Kernels cuánticos:**  
