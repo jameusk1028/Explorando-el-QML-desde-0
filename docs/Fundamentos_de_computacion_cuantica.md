@@ -42,10 +42,10 @@ Al aplicar diferentes puertas, puedes crear efectos de superposición o entrelaz
 
 Ejemplos de puertas:
 
-- **Puerta X**: Esta puerta invierte el valor del qubit.  
-  - Si el qubit está en 0, pasa a 1.  
-  - Si el qubit está en 1, pasa a 0.  
-  - Es como un interruptor de luz: si está apagado, lo enciende; si está encendido, lo apaga.
+- **Puerta X**: Esta puerta invierte el valor del qubit.
+      - Si el qubit está en 0, pasa a 1.
+      - Si el qubit está en 1, pasa a 0.
+      - Es como un interruptor de luz: si está apagado, lo enciende; si está encendido, lo apaga.
 
 - **Puerta Hadamard**: Es una de las más importantes, porque convierte un estado fijo (0 o 1) en una superposición.
   - Si aplicas la puerta Hadamard a |0⟩, el qubit pasa a ser mitad 0 y mitad 1 al mismo tiempo.
