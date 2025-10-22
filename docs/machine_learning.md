@@ -1,4 +1,4 @@
-# Fundamentos de Machine Learning clásico 
+# **Fundamentos de Machine Learning clásico** 
 
 El Machine Learning (ML) o aprendizaje automático, es una de las tecnologías más influyentes de nuestra era.
 Se trata de enseñar a las máquinas a aprender de los datos, a encontrar patrones y a tomar decisiones por sí mismas, sin que un programador tenga que escribir todas las reglas una por una.
@@ -40,7 +40,7 @@ El equilibrio entre ambos es lo que convierte a un modelo en inteligente y útil
 
 
 ---
-## ¿Por qué es importante?
+## **¿Por qué es importante?**
 El Machine Learning está detrás de muchas de las herramientas y tecnologías que usamos todos los días:
 - Recomendaciones personalizadas en YouTube, Netflix o Spotify.
 - Reconocimiento facial para desbloquear el celular o detectar rostros en fotos.
@@ -51,7 +51,7 @@ El Machine Learning está detrás de muchas de las herramientas y tecnologías q
 Todo esto funciona gracias a algoritmos que aprenden de los datos, mejoran con la práctica y ajustan sus predicciones constantemente. 
 
 ---
-## ¿Cómo funciona un proyecto de ML?
+## **¿Cómo funciona un proyecto de ML?**
 Un flujo típico se ve así:  
 
 1. **Preparar los datos** (limpiar, seleccionar variables importantes).  
