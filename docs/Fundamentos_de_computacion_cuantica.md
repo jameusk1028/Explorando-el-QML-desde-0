@@ -68,9 +68,11 @@ Ejemplos de puertas:
       - ¿Por qué es importante la puerta CNOT?
 
 
-       Porque permite entrelazar dos qubits, es decir, crear una conexión entre ellos donde lo que le pase a uno afecta al otro.
 
-       Ejemplo cotidiano: imagina dos interruptores conectados mágicamente: cuando activas uno, el otro cambia instantáneamente sin importar la distancia.
+           Porque permite entrelazar dos qubits, es decir, crear una conexión entre ellos donde lo que le pase a uno afecta al otro.
+
+           Ejemplo cotidiano: imagina dos interruptores conectados mágicamente: cuando activas uno, el otro cambia instantáneamente sin importar la distancia.
+
 
 
 ### 5. **Medición y colapso**
@@ -90,7 +92,7 @@ Estas propiedas (Superposicion , entrelazamiento y puertas cuanticas) son base d
 
 ---
 
-## Recursos recomendados para ti
+## **Recursos recomendados para ti**
 - [Introducción a la computación cuántica (IBM Qiskit)](https://qiskit.org/textbook)  
 - Video: [Quantum Computers Explained (Kurzgesagt)](https://www.youtube.com/watch?v=JhHMJCUmq28)  
 - [¿Qué es un qubit? – IBM Think](https://www.ibm.com/think/topics/qubit)
