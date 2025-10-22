@@ -67,7 +67,8 @@ Ejemplos de puertas:
   
       - ¿Por qué es importante?
 
-       Porque permite entrelazar dos qubits, es decir, crear una conexión entre ellos donde lo que le pase a uno afecta al otro.
+
+  Porque permite entrelazar dos qubits, es decir, crear una conexión entre ellos donde lo que le pase a uno afecta al otro.
        Ejemplo cotidiano: imagina dos interruptores conectados mágicamente: cuando activas uno, el otro cambia instantáneamente sin importar la distancia.
 
 
