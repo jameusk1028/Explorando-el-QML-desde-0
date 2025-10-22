@@ -1,19 +1,20 @@
 # **Conexión entre Machine Learning y la Computación Cuántica** 
 
-El Quantum Machine Learning (QML) combina lo mejor de dos mundos:  
-- La computación cuántica, que puede explorar enormes espacios de información gracias a fenómenos como la superposición y el entrelazamiento.  
-- El machine learning, que permite a las máquinas aprender patrones y tomar decisiones a partir de los datos.  
+El Quantum Machine Learning (QML) es el punto donde la ciencia clásica y la cuántica se encuentran.  
+Combina el poder del Machine Learning, que enseña a las máquinas a aprender de los datos, con la computación cuántica, que procesa información aprovechando fenómenos como la superposición y el entrelazamiento.
 
-El resultado: Modelos híbridos capaces de abordar problemas que hoy resultan imposibles o demasiado costosos para los computadores clásicos.
+El resultado: Modelos híbridos capaces de resolver problemas que hoy serían imposibles o tomarían siglos con los computadores actuales.
 
 ---
 
 ## **¿Qué aporta lo cuántico al ML?**
 
-- **Espacios de alta dimensión:** los qubits permiten representar información en un espacio de Hilbert mucho mayor que los bits clásicos.  
-- **Paralelismo cuántico:** gracias a la superposición, un sistema cuántico puede procesar muchas configuraciones de datos a la vez.  
-- **Entrelazamiento:** posibilita relaciones entre variables que un modelo clásico difícilmente capturaría.  
-- **Ventaja algorítmica:** algunos algoritmos cuánticos prometen acelerar tareas de optimización y clasificación.  
+- **Espacios de alta dimensión:** los qubits pueden representar información en un espacio mucho más amplio que los bits clásicos.  
+- **Paralelismo cuántico:** gracias a la superposición, un sistema cuántico puede explorar muchas soluciones a la vez.   
+- **Paralelismo cuántico:** gracias a la superposición, un sistema cuántico puede explorar muchas soluciones a la vez.    
+- **Ventaja algorítmica:** algunos algoritmos cuánticos prometen acelerar procesos de optimización y clasificación.
+
+En conjunto, esto significa que un modelo cuántico puede aprender patrones más complejos con menos datos y en menos tiempo.
 
 ---
 
