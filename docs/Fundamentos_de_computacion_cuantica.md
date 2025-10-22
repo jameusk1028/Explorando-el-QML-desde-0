@@ -79,6 +79,8 @@ Cuando observas un qubit, este “colapsa” a uno de sus posibles valores (0 o 
 Ejemplo:
 Es como si la moneda girando (superposición) se detuviera: al mirarla, forzosamente se convierte en cara o cruz.
 
+---
+
 ### **¿Cual es la imporatancia de todo esto?**
 Estas propiedas (Superposicion , entrelazamiento y puertas cuanticas) son base de el poder que tiene la computacion cuantica, gracias a ellas es que se dice que los computadores cuanticos prometen revolucionar campos como:
 
@@ -89,11 +91,22 @@ Estas propiedas (Superposicion , entrelazamiento y puertas cuanticas) son base d
 
 ---
 
+## **¿Sabías que...?**
+
+El físico Richard Feynman fue uno de los primeros en decir “Necesitamos computadoras cuánticas para entender la naturaleza cuántica”  
+Y tenía razón, en lugar de bits, estas máquinas usan qubits, que pueden estar en 0 y 1 al mismo tiempo tal como lo viste anteriormente, es como si pudieras estar dormido y despierto a la vez.
+Para que funcionen, deben estar más frías que el espacio exterior, a temperaturas cercanas al cero absoluto (-273 °C).
+Hoy empresas como IBM, Google y Amazon ya están construyendo computadoras cuánticas reales, y hasta puedes probar una desde tu navegador con IBM Q Experience.
+
+---
+
+
 ## **Recursos recomendados para ti**
 - [Introducción a la computación cuántica (IBM Qiskit)](https://qiskit.org/textbook)  
 - Video: [Quantum Computers Explained (Kurzgesagt)](https://www.youtube.com/watch?v=JhHMJCUmq28)  
 - [¿Qué es un qubit? – IBM Think](https://www.ibm.com/think/topics/qubit)
-- [4 preguntas clave para entender la Computación Cuántica(Luciana Gutsztat)](https://stayrelevant.globant.com/es/technology/data-ai/4-preguntas-clave-para-entender-la-computacion-cuantica-una-tendencia-tecnologica-en-el-horizonte/?) 
+- [4 preguntas clave para entender la Computación Cuántica(Luciana Gutsztat)](https://stayrelevant.globant.com/es/technology/data-ai/4-preguntas-clave-para-entender-la-computacion-cuantica-una-tendencia-tecnologica-en-el-horizonte/?)
+- [IBM Q Experience](https://quantum.cloud.ibm.com/)
 ---
 
 Este módulo busca que comprendas las bases esenciales de la computación cuántica antes de conectar estos conceptos con el aprendizaje automático.
