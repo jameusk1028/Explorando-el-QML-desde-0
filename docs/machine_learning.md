@@ -33,8 +33,8 @@ Ejemplo: asistentes como Siri o Alexa que captan tu voz y la procesan para respo
 El objetivo del Machine Learning es lograr que un modelo aprenda bien los datos,  
 pero también generalice para funcionar con información nueva.
 
-    - Si aprende demasiado, memoriza los datos → eso se llama **overfitting**.
-    - Si aprende muy poco, no entiende los patrones → eso es **underfitting**.    
+    - Si aprende demasiado, memoriza los datos eso se llama **overfitting**.
+    - Si aprende muy poco, no entiende los patrones eso es **underfitting**.    
 
 En resumen, el reto del Machine Learning está en aprender lo suficiente sin memorizarlo todo.  
 El equilibrio entre ambos es lo que convierte a un modelo en inteligente y útil.
@@ -56,13 +56,13 @@ Todo esto funciona gracias a algoritmos que aprenden de los datos, mejoran con l
 ## **¿Cómo funciona un proyecto de ML?**
 Un flujo típico se ve así:  
 
-1. **Preparar los datos** (limpiar, seleccionar variables importantes).  
-2. **Elegir un modelo** (ej: regresión, árbol de decisión, red neuronal).  
-3. **Entrenar el modelo** con datos históricos.  
-4. **Validar y evaluar** para ver qué tan bien predice.  
-5. **Ajustar y mejorar** parámetros, añadir más datos.  
-6. **Implementar** para que funcione en la vida real.  
-
+1. **Preparar los datos**: Limpiar errores, seleccionar las variables más importantes.  
+2. **Elegir un modelo**: Puede ser una regresión, árbol de decisión o red neuronal.
+3. **Entrenar el modelo**: Alimentarlo con datos históricos para que aprenda patrones. 
+4. **Validar y evaluar**: Probar el modelo con nuevos datos y medir qué tan bien predice.
+5. **Ajustar y mejorar**: Afinar parámetros y añadir más datos para mejorar resultados. 
+6. **Implementar**: Llevar el modelo al mundo real (por ejemplo, una app o un sistema de recomendación).  
+>En resumen: el Machine Learning aprende del pasado para predecir el futuro.
 ---
 
 ## Recursos para que puedas aprender más
