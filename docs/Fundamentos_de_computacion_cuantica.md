@@ -1,4 +1,4 @@
-# Fundamentos de Computación Cuántica
+# **Fundamentos de Computación Cuántica**
 
 Imagina que tienes un computador tan potente que puedes explorar miles de posibilidades al mismo tiempo, en lugar de hacerlo una por una.
 Eso es lo que permite la computación cuántica: aprovechar las leyes de la mecánica cuántica (la rama de la física que describe el comportamiento de las partículas más pequeñas del universo) para procesar información de formas que los computadores tradicionales no pueden.
@@ -9,7 +9,7 @@ Esta propiedad, conocida como superposición, es lo que da a la computación cu�
 
 ---
 
-## Conceptos clave
+## **Conceptos clave**
 
 ### 1. **Qubit**
 Un qubit es la unidad básica de información cuántica, equivalente al bit en la computación clásica.
