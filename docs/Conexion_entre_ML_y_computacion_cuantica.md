@@ -45,14 +45,20 @@ En resumen: la computación cuántica aporta velocidad, capacidad y profundidad,
 El Quantum Machine Learning (QML) está comenzando a transformar distintos campos al combinar la potencia del aprendizaje automático con la capacidad cuántica de procesar información.  
 Aquí te dejamos algunos de los usos más prometedores: 
 
-- **Quimica y materiales:** Simulación de moléculas y reacciones químicas con una precisión imposible para los computadores clásicos77
+- **Quimica y materiales:** Simulación de moléculas y reacciones químicas con una precisión imposible para los computadores clásicos.
     - Ejemplo: Predecir cómo reaccionará un nuevo medicamento antes de fabricarlo o diseñar materiales más resistentes y livianos para aviones o baterías.
 - **Finanzas**: Análisis de millones de transacciones en segundos para detectar fraudes o predecir comportamientos del mercado.
-- **Salud y biotecnologia**: Procesamiento de datos genómicos para desarrollar tratamientos personalizados y descubrir nuevas terapias.  
+    - Ejemplo: Optimizar portafolios de inversión encontrando combinaciones rentables en tiempo récord o detectar movimientos anómalos que podrían ser fraude bancario.
+- **Salud y biotecnologia**: Procesamiento de datos genómicos para desarrollar tratamientos personalizados y descubrir nuevas terapias.
+    - Ejemplo: Analizar secuencias de ADN para encontrar patrones que indiquen predisposición a enfermedades o respuestas a medicamentos.
 - **IA avanzada**: Redes neuronales cuánticas que reconocen voz, imágenes y patrones complejos con más rapidez.
+    - Ejemplo: Asistentes virtuales que aprenden más rápido, o sistemas de visión artificial en autos autónomos que reaccionan en milisegundos.
 - **Medio ambiente y sostenibilidad**: Modelos cuánticos para optimizar el consumo energético y mejorar predicciones climáticas.
-- **Ciberseguridad**: Uso de criptografía cuántica y algoritmos QML para detectar intrusiones y proteger datos en tiempo real.  
-- **Transporte y logistica**: Optimización de rutas y distribución de recursos a gran escala.  
+    - Ejemplo: Simular el comportamiento de ecosistemas o diseñar rutas de transporte que reduzcan emisiones de CO₂.
+- **Ciberseguridad**: Uso de criptografía cuántica y algoritmos QML para detectar intrusiones y proteger datos en tiempo real.
+    - Ejemplo: Crear sistemas que aprendan automáticamente nuevos tipos de ciberataques antes de que ocurran.
+- **Transporte y logistica**: Optimización de rutas y distribución de recursos a gran escala.
+    - Ejemplo: Planear envíos globales de manera más eficiente o gestionar tráfico urbano con aprendizaje cuántico en tiempo real.
 
 ---
 
