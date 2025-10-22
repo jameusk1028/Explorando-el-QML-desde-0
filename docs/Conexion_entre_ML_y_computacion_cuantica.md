@@ -44,6 +44,7 @@ En resumen: la computación cuántica aporta velocidad, capacidad y profundidad,
 ## **Ejemplos de aplicaciones futuras**
 El Quantum Machine Learning (QML) está comenzando a transformar distintos campos al combinar la potencia del aprendizaje automático con la capacidad cuántica de procesar información.  
 Aquí te dejamos algunos de los usos más prometedores: 
+
 - **Quimica y materiales:** Simulación de moléculas y reacciones químicas con una precisión imposible para los computadores clásicos77
     - Ejemplo: Predecir cómo reaccionará un nuevo medicamento antes de fabricarlo o diseñar materiales más resistentes y livianos para aviones o baterías.
 - **Finanzas**: Análisis de millones de transacciones en segundos para detectar fraudes o predecir comportamientos del mercado.
@@ -59,7 +60,7 @@ Aquí te dejamos algunos de los usos más prometedores:
 - [Computación cuántica | Iberdrola](https://www.iberdrola.com/innovacion/que-es-computacion-cuantica)   
 - [Tutorial de Machine Learning | Interactive Chaos](https://interactivechaos.com/es/manual/tutorial-de-machine-learning/tutorial-de-machine-learning)  
 - Video: [Machine Learning explicado de forma sencilla (YouTube)](https://www.youtube.com/watch?v=n-DflQldMuc)
-- - Video: [Quantum Machine Learning - Tomas Tagliani](https://youtu.be/F_E39gBPRF4?si=90icl8af6b6PgX15) 
+- Video: [Quantum Machine Learning - Tomas Tagliani](https://youtu.be/F_E39gBPRF4?si=90icl8af6b6PgX15) 
 
 ---
 Esta sección marca el puente entre los fundamentos clásicos y las posibilidades cuánticas, preparando el terreno para la futura sección de Exploración práctica.
