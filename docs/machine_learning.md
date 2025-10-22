@@ -16,17 +16,21 @@ En otras palabras, el ML permite que los computadores aprendan de la experiencia
 
     Ejemplo: Predecir el precio de una casa segun su tamaño, ubicacion y numero de habitaciones.
    
+   
 2. **Clasificacion**:
    
    Sirve para asignar una categoria a cada dato.
 
-    Ejemplo: Detectar si un correo es spam o no, o si una imagen contiene un perro o un gato.
+   Ejemplo: Detectar si un correo es spam o no, o si una imagen contiene un perro o un gato.
+   
    
 3. **Clustering (agrupamiento)**:
    
    Agrupa datos que no cuentan con etiquetas previas, buscando simiitudes ocultas entre cada uno de ellos.
  
    Ejemplo: Agrupar clientes de una tienda segun su comportamiento de compra.
+
+   
    
 4. **Redes neuronales**:
 
@@ -34,11 +38,13 @@ En otras palabras, el ML permite que los computadores aprendan de la experiencia
 
    Ejemplo: Asistentes como Siri o Alexa que captan tu voz y la procesan para poder responder inteligentemente
 
+
+
 - **El desafio del machine learning: aprender sin pasarse ni quedarse corto:**
    El objetivo del Machine Learning es lograr que un modelo aprenda bien los datos, pero también generalice para funcionar con información nueva.
-   
-   - Si aprende demasiado, memoriza los datos a lo que se le llama overfitting
-   - Si aprende muy poco, no entiende los patrones lo cual se dice que es underfitting
+
+            - Si aprende demasiado, memoriza los datos a lo que se le llama overfitting
+            - Si aprende muy poco, no entiende los patrones lo cual se dice que es underfitting
 
    En resumen, el reto del Machine Learning está en aprender lo suficiente sin memorizarlo todo, el equilibrio entre ambos es lo que convierte a un modelo en          inteligente y útil.
 
