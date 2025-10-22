@@ -1,4 +1,4 @@
-# Introducción 
+# **Introducción**
 
 ¿Te imaginas un computador capaz de resolver en segundos problemas que hoy en día tomarían miles de años?  
 Esa es la promesa que nos hace el Quantum Machine Learning (QML) un campo emergente donde la computacion cuantica se encuentra con la inteligencia artificial dandonos lo mejor de cada una y asi abrir paso a una nueva era de procesamiento de informacion. 
@@ -10,7 +10,7 @@ En otras palabras: el QML combina la capacidad de “aprender” de las máquina
 
 ---
 
-##  ¿Por qué es tan importante el QML?
+## **¿Por qué es tan importante el QML?**
 
 El QML abre la puerta a avances increíbles en áreas como:  
 - Optimización de procesos industriales  
@@ -22,7 +22,7 @@ En pocas palabras: nos ayuda a pensar y crear soluciones en niveles que antes pa
 
 ---
 
-## Recursos que te recomendamos ver para empezar
+## **Recursos que te recomendamos ver para empezar**
 - [IBM: Introduction to quantum computing](https://quantum.cloud.ibm.com/learning/es/courses/quantum-business-foundations/introduction-to-quantum-computing?utm)  
 - Video: [Quantum Machine Learning - Tomas Tagliani](https://youtu.be/F_E39gBPRF4?si=90icl8af6b6PgX15)  
 - Video: [¿Qué es la computación cuántica? (YouTube, Qiskit)](https://www.youtube.com/watch?v=JhHMJCUmq28)
